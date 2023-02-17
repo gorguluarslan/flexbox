@@ -11,6 +11,11 @@
     .container {
       display: flex;
 
+      /* flex-direction: column; */
+
+      /* align-items: start; */
+      align-items: flex-end;
+
       height: 500px;
       background-color: #034f84;
     }
@@ -21,6 +26,9 @@
       color: #fff;
       font-size: 25px;
     }
+    .item-1 {
+      align-self: start;
+    }
     img {
       width: 450px;
       height: 250px;
@@ -30,10 +38,10 @@
     <h1>FLEXBOX</h1>
     <img src="./images/flexbox.png" alt="" />
     <div class="container">
-      <div class="item">item 1</div>
-      <div class="item">item 2</div>
-      <div class="item">item 3</div>
-      <div class="item">item 4</div>
+      <div class="item item-1">item 1</div>
+      <div class="item item-2">item 2</div>
+      <div class="item item-3">item 3</div>
+      <div class="item item-4">item 4</div>
     </div>
   </body>
 </html>

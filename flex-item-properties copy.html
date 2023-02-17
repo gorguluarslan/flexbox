@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <title>Document</title>
+  </head>
+  <style>
+    .container {
+      display: flex;
+
+      height: 500px;
+      background-color: #034f84;
+    }
+    .item {
+      background-color: #f7786b;
+      padding: 30px;
+      margin: 20px;
+      color: #fff;
+      font-size: 25px;
+      /* grow-shrink-basis için tek bir özellik kullanılabilir. */
+      /* flex: 0 1 200px */
+
+      /* bütün içeriği kaplamak default=0 geliyo. 0 harici değer vermelisin. */
+      flex-grow: 1;
+    }
+    .item-1 {
+      /* order: 3;  elemanın sırasını belirlemek için kullanılır. */
+      flex-grow: 2;
+
+      /* flex: 25%; bu ifade de sık kullanılır. */
+    }
+    .item-2 {
+      flex-grow: 3;
+    }
+    .item-3 {
+      flex-basis: 200px;
+      /* hiçbir zaman 200px'in altına inme demek istersek shrink 0 yapmalıyız. */
+      flex-shrink: 0;
+    }
+    .item-4 {
+      flex-grow: 3;
+    }
+
+    img {
+      width: 450px;
+      height: 250px;
+    }
+  </style>
+  <body>
+    <h1>FLEXBOX</h1>
+    <img src="./images/flexbox.png" alt="" />
+    <div class="container">
+      <div class="item item-1">item 1</div>
+      <div class="item item-2">item 2</div>
+      <div class="item item-3">item 3</div>
+      <div class="item item-4">item 4</div>
+    </div>
+  </body>
+</html>

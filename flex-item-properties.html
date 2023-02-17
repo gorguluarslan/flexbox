@@ -20,11 +20,17 @@
       margin: 20px;
       color: #fff;
       font-size: 25px;
+      /* grow-shrink-basis için tek bir özellik kullanılabilir. */
+      /* flex: 0 1 200px */
+
       /* bütün içeriği kaplamak default=0 geliyo. 0 harici değer vermelisin. */
       flex-grow: 1;
     }
     .item-1 {
+      /* order: 3;  elemanın sırasını belirlemek için kullanılır. */
       flex-grow: 2;
+
+      /* flex: 25%; bu ifade de sık kullanılır. */
     }
     .item-2 {
       flex-grow: 3;

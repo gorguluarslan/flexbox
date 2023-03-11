@@ -46,6 +46,9 @@
           position: relative;
           flex-direction: column;
         }
+        nav a {
+          align-self: flex-start;
+        }
         .navigation {
           flex-direction: column;
         }
@@ -60,6 +63,12 @@
           position: absolute;
           top: 0;
           right: 10px;
+        }
+        .responsive .navigation li:not(:last-child) {
+          display: none;
+        }
+        .navigation li:last-child a {
+          border-bottom: none;
         }
       }
     </style>
